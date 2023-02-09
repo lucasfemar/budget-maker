@@ -1,0 +1,19 @@
+{
+  "name": "budgetMaker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --watch 'src/' --exec 'ts-node src/server.ts' -e ts"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
