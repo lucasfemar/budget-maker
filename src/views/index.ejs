@@ -1,26 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <%- include("./parts/page_head.ejs") %>
+<html lang="pt-BR">
 
-    <body class="dark-edition">
-        <div class="wrapper">
-            <%- include('./parts/page_sidebar.ejs') %>
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/plugins/materialDashboard/assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="/plugins/materialDashboard/assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Material Dashboard by Creative Tim</title>
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="/plugins/materialDashboard/assets/css/material-dashboard.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div class="wrapper">
+        <%- include("./parts/sidebar_part.ejs") %>
             <div class="main-panel">
-                <%- include('./parts/page_navbar.ejs') %>
-                <main class="content">
-                    <div class="container-fluid">
-                        <!-- your content here -->
+                <%- include("./parts/navbar_part.ejs") %>
+                    <div class="content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card card-stats">
+                                        <div class="card-header card-header-warning card-header-icon">
+                                            <div class="card-icon">
+                                                <i class="material-icons">content_copy</i>
+                                            </div>
+                                            <p class="card-category">Used Space</p>
+                                            <h3 class="card-title">
+                                                49/50
+                                                <small>GB</small>
+                                            </h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="stats">
+                                                <i class="material-icons text-danger">warning</i>
+                                                <a href="javascript:;">Get More Space...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card card-stats">
+                                        <div class="card-header card-header-success card-header-icon">
+                                            <div class="card-icon">
+                                                <i class="material-icons">store</i>
+                                            </div>
+                                            <p class="card-category">Revenue</p>
+                                            <h3 class="card-title">$34,245</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="stats"><i class="material-icons">date_range</i> Last 24 Hours
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card card-stats">
+                                        <div class="card-header card-header-danger card-header-icon">
+                                            <div class="card-icon">
+                                                <i class="material-icons">info_outline</i>
+                                            </div>
+                                            <p class="card-category">Fixed Issues</p>
+                                            <h3 class="card-title">75</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="stats">
+                                                <i class="material-icons">local_offer</i> Tracked from Github
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="card card-stats">
+                                        <div class="card-header card-header-info card-header-icon">
+                                            <div class="card-icon">
+                                                <i class="fa fa-twitter"></i>
+                                            </div>
+                                            <p class="card-category">Followers</p>
+                                            <h3 class="card-title">+245</h3>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="stats"><i class="material-icons">update</i> Just Updated</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </main>
-                <%- include('./parts/page_footer.ejs') %>
+                    <%- include("./parts/footer_part.ejs") %>
             </div>
-        </div>
-        <!--   Core JS Files   -->
-        <script src="/plugins/materialDashboard/assets/js/core/jquery.min.js"></script>
-        <script src="/plugins/materialDashboard/assets/js/core/popper.min.js"></script>
-        <script src="/plugins/materialDashboard/assets/js/core/bootstrap-material-design.min.js"></script>
-        <script src="https://unpkg.com/default-passive-events"></script>
-        <script src="/plugins/materialDashboard/assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-        <script src="/plugins/materialDashboard/assets/js/material-dashboard.js?v=2.1.0"></script>
-    </body>
+    </div>
+
+    <%- include("./parts/corejs_part.ejs") %>
+
+</body>
+
 </html>
